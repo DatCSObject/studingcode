@@ -1,37 +1,71 @@
 
-<!DOCTYPE html>
-<html lang="vi">
+<!doctype html>
+<html>
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="lib/chessboardjs/css/chessboard-0.3.0.css">
-<link rel="stylesheet" href="style.css">
-<title> Cờ Vua Online </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CỜ VUA ONLINE</title>
 </head>
-<body>
-<div id="board" class="board"></div>
-<div class="info">
-Level:
-<select id="search-depth">
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3" selected>3</option>
-<option value="4">4</option>
-</select>
-<br>
-<span>Thời gian đánh: <span id="time"></span></span>
-<br>
-<span>Lịch sử lượt đánh:
-<br>
-<span id="move-history"></span></span>
-<div id="move-history" class="move-history">
-</div>
-</div>
-<script src="lib/jquery/jquery-3.2.1.min.js"></script>
-<script src="lib/chessboardjs/js/chess.js"></script>
-<script src="lib/chessboardjs/js/chessboard-0.3.0.js"></script>
-<script src="script.js"></script>
-<script>
+<style>
+	p{
+		text-align:center;
+		font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+		font-weight:lighter;
+		font-size:50px;
+	}
+	img{
+		margin:auto;
+	}
 
+	div{
+		text-align:center;
+	}
+	
+	.btn{
+		margin-top: 5%;
+		background-color: #F1654C;
+		border:none;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 50px;
+		padding-left: 50px;
+		font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+		font-weight:lighter;
+		font-size:20px;
+		color:#FFFFFF;
+		text-align:center;
+		display:inline-block;
+	}
+	
+	.btn:hover{
+		background-color: #16A085;
+	}
+	#Design{
+		float:right;
+		font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+		font-weight:lighter;
+		font-size:30px;
+		margin-top:4.5%;
+		padding-right: 20px;
+	}
+	
+</style>
+<script>
+	function Go(){
+		window.location.href = "Run.html";
+	}
 </script>
+<body>
+<div>
+<p>CỜ VUA ONLINE </p>
+<img src="icon/Icon_.png" width="217" height="218" alt="" />
+<div>
+<input class="btn" type="button" value="BẮT ĐẦU" onClick="Go()" />
+<br>
+<h2> Lập Trình Viên: Trần Nhật Nam </h2>
+<h2> Thuyết Trình Viên: Võ Dương Giáp </h2>
+<h2> THCS Thanh Binh </h2>
+</p>
+</div>
+</div>
 </body>
 </html>
